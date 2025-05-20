@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/YouTalk.svg" type="image/x-icon">
     <title>YouTalk</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/YouTalk.svg">
-    <link rel="stylesheet" type="text/css" href="css/font.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,100 +15,65 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__container-logo-menu">
-                    <div class="header__logo">
-                        <a href="blog.html" class="header__logo-link">
-                            <img src="./img/YouTalk.svg" alt="логотип" class="logo">
-                        </a>
-                    </div>
-                    <nav class="header__menu" aria-label="Основное меню">
+                    <div class="header__logo"><a href="blog.html"><img class="logo" src="./img/YouTalk.svg"
+                                alt="логотип"></a></div>
+                    <nav class="header__menu">
                         <ul class="header__menu-list">
-                            <li class="header__menu-item"><a href="#" class="header__menu-link">О нас</a></li>
-                            <li class="header__menu-item"><a href="#" class="header__menu-link">Тарифы</a></li>
-                            <li class="header__menu-item"><a href="#" class="header__menu-link">Для бизнеса</a></li>
-                            <li class="header__menu-item"><a href="#" class="header__menu-link">Психологам</a></li>
-                            <li class="header__menu-item"><a href="#" class="header__menu-link">Сертификат</a></li>
-                            <li class="header__menu-item"><a href="#" class="header__menu-link">Материалы</a></li>
-                            <li class="header__menu-item"><a href="#" class="header__menu-link">FAQ</a></li>
+                            <li class="header__menu-item"><a href="#">О нас</a></li>
+                            <li class="header__menu-item"><a href="#">Тарифы</a></li>
+                            <li class="header__menu-item"><a href="#">Для бизнеса</a></li>
+                            <li class="header__menu-item"><a href="#">Психологам</a></li>
+                            <li class="header__menu-item"><a href="#">Сертификат</a></li>
+                            <li class="header__menu-item"><a href="#">Материалы</a></li>
+                            <li class="header__menu-item"><a href="#">FAQ</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="header__burger" aria-label="Меню" role="button" tabindex="0">
-                    <span class="header__burger-line"></span>
+                <div class="header__burger">
+                    <span></span>
                 </div>
-                <button type="button" class="header__button">Подобрать психолога</button>
+                <button href="#" class="header__button">Подобрать психолога</button>
             </div>
         </div>
     </header>
     <main class="main main-background-image">
-        <div class="main__background-wrapper">
-            <img class="main__background-image" src="./img/background/background.png" alt="Фоновое изображение">
-        </div>
+        <img class="main__background-image" src="./img/background/background.png">
         <div class="container">
             <div class="main__inner">
-                <nav class="breadcrumbs" aria-label="Хлебные крошки">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-                        <li class="breadcrumbs__item"><img src="./img/arrow-right.svg" alt="Стрелка вправо" class="breadcrumbs__arrow"></li>
-                        <li class="breadcrumbs__item"><a href="active" class="breadcrumbs__link">Блог</a></li>
-                    </ul>
-                </nav>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                    <li class="breadcrumbs__item"><img src="./img/arrow-right.svg"></li>
+                    <li class="breadcrumbs__item"><a href="active">Блог</a></li>
+                </ul>
                 <h1 class="main__headline">Блог</h1>
-                <nav class="main__section-menu" aria-label="Категории блога">
-                    <ul class="main__section-menu-list">
-                        <li class="main__section-menu-item">
-                            <a href="#" class="main__section-menu-link">
-                                <img src="./img/article/smile.svg" alt="Смайл" class="main__section-menu-icon"> Все
-                            </a>
-                        </li>
-                        <li class="main__section-menu-item">
-                            <a href="#" class="main__section-menu-link">Самооценка и самопринятие</a>
-                        </li>
-                        <li class="main__section-menu-item">
-                            <a href="#" class="main__section-menu-link">
-                                <img src="./img/article/unicorn.svg" alt="Единорог" class="main__section-menu-icon"> Self
-                            </a>
-                        </li>
-                        <li class="main__section-menu-item">
-                            <a href="#" class="main__section-menu-link">Чувства и эмоции</a>
-                        </li>
-                        <li class="main__section-menu-item">
-                            <a href="#" class="main__section-menu-link">Тревога</a>
-                        </li>
-                        <li class="main__section-menu-item">
-                            <a href="#" class="main__section-menu-link">Упражнения</a>
-                        </li>
-                        <li class="main__section-menu-item">
-                            <a href="#" class="main__section-menu-link">Психология питания</a>
-                        </li>
-                        <li class="main__section-menu-item">
-                            <a href="#" class="main__section-menu-link">Насилие</a>
-                        </li>
-                        <li class="main__section-menu-item">
-                            <a href="#" class="main__section-menu-link">Личное здоровье</a>
-                        </li>
-                    </ul>
-                </nav>
-                <section class="main__article-selection" aria-label="Статьи блога">
+                <ul class="main__section-menu">
+                    <li class="main__section-menu-item"><a href="#"><img src="./img/article/smile.svg"> Все</a></li>
+                    <li class="main__section-menu-item"><a href="#">Самооценка и самопринятие</a></li>
+                    <li class="main__section-menu-item"><a href="#"><img src="./img/article/unicorn.svg"> Self</a></li>
+                    <li class="main__section-menu-item"><a href="#">Чувства и эмоции</a></li>
+                    <li class="main__section-menu-item"><a href="#">Тревога</a></li>
+                    <li class="main__section-menu-item"><a href="#">Упражнения</a></li>
+                    <li class="main__section-menu-item"><a href="#">Психология питания</a></li>
+                    <li class="main__section-menu-item"><a href="#">Насилие</a></li>
+                    <li class="main__section-menu-item"><a href="#">Личное здоровье</a></li>
+                </ul>
+                <section class="main__article-selection">
                     <div class="main__article-selection-wrap">
-                        <article class="main__article-card">
-                            <a href="article.html" class="main__article-link">
-                                <div class="main__article-image-wrapper">
-                                    <img class="main__article-selection-image" src="./img/heroes/hero-eggs.png" alt="Иллюстрация к статье">
-                                </div>
-                                <ul class="main__article-selection-category">
-                                    <li class="main__article-selection-item">
-                                        <img src="./img/article/unicorn.svg" alt="Иконка категории"> Самооценка и самопринятие
-                                    </li>
-                                    <li class="main__article-selection-item">
-                                        <img src="./img/article/unicorn.svg" alt="Иконка категории"> Self
-                                    </li>
-                                </ul>
-                                <h4 class="main__article-selection-heading">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h4>
-                                <p class="main__article-selection-author">Автор: Лиза Файнтух</p>
-                                <p class="main__article-selection-text">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
-                                <time class="main__article-selection-date" datetime="2021-08-21">21.08.2021</time>
-                            </a>
-                        </article>
+                        <a href="article.html">
+                            <img class="main__article-selection-image" src="./img/heroes/hero-eggs.png"
+                                alt="изображение">
+                            <ul class="main__article-selection-category">
+                                <li class="main__article-selection-item"><img src="./img/article/unicorn.svg">
+                                    Самооценка и самопринятие</li>
+                                <li class="main__article-selection-item"><img src="./img/article/unicorn.svg"> Self</li>
+                            </ul>
+                            <h4 class="main__article-selection-heading">Эмоциональное выгорание – стадии и симптомы,
+                                методы восстановления и профилактики</h4>
+                            <p class="main__article-selection-author">Автор: Лиза Файнтух</p>
+                            <p class="main__article-selection-text">Изначально термин «эмоциональное профессиональной
+                                сфере и относился...</p>
+                            <p class="main__article-selection-date">21.08.2021</p>
+                        </a>
                     </div>
                     <div class="main__article-selection-wrap">
                         <a href="article.html">
@@ -218,7 +183,7 @@
                     </div>
                 </section>
                 <div class="main-btn-wrap">
-                    <button type="button" class="main__button">Ещё</button>
+                    <button href="#" class="main__button">Ещё</button>
                 </div>
             </div>
         </div>
@@ -227,72 +192,59 @@
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__top">
-                    <nav class="footer__options" aria-label="Навигация по сайту">
+                    <div class="footer__options">
                         <ul class="footer__list">
-                            <li class="footer__list-item"><a href="#" class="footer__link">О нас</a></li>
-                            <li class="footer__list-item"><a href="#" class="footer__link">Тарифы</a></li>
-                            <li class="footer__list-item"><a href="#" class="footer__link">Для бизнеса</a></li>
-                            <li class="footer__list-item"><a href="#" class="footer__link">Психологам</a></li>
-                            <li class="footer__list-item"><a href="#" class="footer__link">FAQ</a></li>
+                            <li><a class="footer__list-item" href="#">О нас</a></li>
+                            <li><a class="footer__list-item" href="#">Тарифы</a></li>
+                            <li><a class="footer__list-item" href="#">Для бизнеса</a></li>
+                            <li><a class="footer__list-item" href="#">Психологам</a></li>
+                            <li><a class="footer__list-item" href="#">FAQ</a></li>
                         </ul>
                         <ul class="footer__list">
-                            <li class="footer__list-item"><a href="#" class="footer__link">Блог</a></li>
-                            <li class="footer__list-item"><a href="#" class="footer__link">Вебинары</a></li>
-                            <li class="footer__list-item"><a href="#" class="footer__link">Подкаст</a></li>
-                            <li class="footer__list-item"><a href="#" class="footer__link">Сертификат</a></li>
-                            <li class="footer__list-item"><a href="#" class="footer__link">Контакты</a></li>
+                            <li><a class="footer__list-item" href="#">Блог</a></li>
+                            <li><a class="footer__list-item" href="#">Вебинары</a></li>
+                            <li><a class="footer__list-item" href="#">Подкаст</a></li>
+                            <li><a class="footer__list-item" href="#">Сертификат</a></li>
+                            <li><a class="footer__list-item" href="#">Контакты</a></li>
                         </ul>
-                    </nav>
-                    <div class="footer__form">
-                        <h2 class="footer__form-title">Одно письмо в неделю со свежими <br> новостями и акциями</h2>
-                        <form class="footer__form-email" onsubmit="alert('Подписка успешно оформлена')">
-                            <input class="footer__form-email-info" type="email" placeholder="Ваш e-mail" required>
-                            <button type="submit" class="footer__form-email-button" aria-label="Подписаться"></button>
+                    </div>
+                    <div class="footer__form" onsubmit="alert('Подписка успешно оформлена')">
+                        <div class="footer__form-title">Одно письмо в неделю со свежими <br> новостями и акциями</div>
+                        <form class="footer__form-email">
+                            <input class="footer__form-email-info" type="text" placeholder="Ваш e-mail">
+                            <button class="footer__form-email-button"></button>
                         </form>
-                        <p class="footer__form-policy">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности</p>
+                        <div class="footer__form-policy">Подписываясь, я соглашаюсь на обработку персональных данных в
+                            соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой
+                            конфиденциальности</div>
                     </div>
                     <div class="footer__icons">
                         <div class="footer__icons-sk">
-                            <a class="footer__icons-sk-item" href="#" target="_blank" rel="noopener">
-                                <img src="./img/sk.svg" alt="участник Сколково">
-                            </a>
-                            <a class="footer__icons-sk-item" href="#" target="_blank" rel="noopener">
-                                <img src="./img/member.svg" alt="участник Сколково">
-                            </a>
+                            <a class="footer__icons-sk-item" href="#" target="_blank"><img src="./img/sk.svg"
+                                    alt="участник Сколково"></a>
+                            <a class="footer__icons-sk-item" href="#" target="_blank"><img src="./img/member.svg"
+                                    alt="участник Сколково"></a>
                         </div>
                         <ul class="footer__icons-social">
-                            <li class="footer__icons-social-item">
-                                <a href="#" target="_blank" rel="noopener" aria-label="ВКонтакте">
-                                    <img src="./img/vk.svg" alt="вконтакте">
-                                </a>
-                            </li>
-                            <li class="footer__icons-social-item">
-                                <a href="#" target="_blank" rel="noopener" aria-label="Telegram">
-                                    <img src="./img/telegram.svg" alt="телеграм">
-                                </a>
-                            </li>
-                            <li class="footer__icons-social-item">
-                                <a href="#" target="_blank" rel="noopener" aria-label="Twitter">
-                                    <img src="./img/twitter.svg" alt="твиттер">
-                                </a>
-                            </li>
-                            <li class="footer__icons-social-item">
-                                <a href="#" target="_blank" rel="noopener" aria-label="Дзен">
-                                    <img src="./img/dzen.svg" alt="дзен">
-                                </a>
-                            </li>
+                            <li><a class="footer__icons-social-item" href="#" target="_blank"><img src="./img/vk.svg"
+                                        alt="вконтакте"></a></li>
+                            <li><a class="footer__icons-social-item" href="#" target="_blank"><img
+                                        src="./img/telegram.svg" alt="телеграм"></a></li>
+                            <li><a class="footer__icons-social-item" href="#" target="_blank"><img
+                                        src="./img/twitter.svg" alt="твиттер"></a></li>
+                            <li><a class="footer__icons-social-item" href="#" target="_blank"><img src="./img/dzen.svg"
+                                        alt="дзен"></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer__bottom">
                     <ul class="footer__bottom-list">
-                        <li class="footer__bottom-item"><a href="#">&#169; Youtalk, 2018 – 2022</a></li>
-                        <li class="footer__bottom-item"><a href="#">Юридические документы</a></li>
-                        <li class="footer__bottom-item"><a href="#">Способы оплаты</a></li>
+                        <li><a class="footer__bottom-item" href="#">&#169; Youtalk, 2018 – 2022</a></li>
+                        <li><a class="footer__bottom-item" href="#">Юридические документы</a></li>
+                        <li><a class="footer__bottom-item" href="#">Способы оплаты</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
     </footer>
 </body>
 
