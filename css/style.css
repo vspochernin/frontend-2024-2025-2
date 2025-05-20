@@ -1,3 +1,16 @@
+/* YouTalk - Платформа психологической поддержки */
+:root {
+  --color-primary: #03B2A5;
+  --color-primary-light: #E3F5F5;
+  --color-text: #333333;
+  --color-text-light: #868686;
+  --color-border: #C1C5CD;
+  --color-white: #FFFFFF;
+  --color-footer: #333333;
+  --border-radius: 4px;
+  --transition-speed: 0.3s;
+}
+
 *,
 *::before,
 *::after {
