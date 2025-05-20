@@ -1,16 +1,47 @@
 /* YouTalk - Платформа психологической поддержки */
+
+/* ==========================================================================
+   Переменные и настройки
+   ========================================================================== */
 :root {
-  --color-primary: #03B2A5;
-  --color-primary-light: #E3F5F5;
-  --color-text: #333333;
-  --color-text-light: #868686;
-  --color-border: #C1C5CD;
-  --color-white: #FFFFFF;
-  --color-footer: #333333;
-  --border-radius: 4px;
-  --transition-speed: 0.3s;
+  /* Colors */
+  --color-brand-primary: #03B2A5;
+  --color-brand-light: #E3F5F5;
+  --color-brand-footer: #2963A3;
+  
+  /* Text colors */
+  --color-text-primary: #333333;
+  --color-text-secondary: #868686;
+  --color-text-light: #C1C5CD;
+  --color-text-white: #FFFFFF;
+  
+  /* UI Elements */
+  --border-radius-small: 4px;
+  --border-radius-large: 16px;
+  
+  /* Animations */
+  --transition-default: 0.3s;
+
+  /* Typography */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 48px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
 }
 
+/* ==========================================================================
+   Базовые стили
+   ========================================================================== */
 *,
 *::before,
 *::after {
@@ -67,6 +98,10 @@ body {
   font-size: 16px;
 }
 
+/* ==========================================================================
+   Компоненты
+   ========================================================================== */
+/* Header */
 .header {
   border-bottom: 1px solid #EFF5FB;
   height: 76px;
@@ -118,9 +153,9 @@ body {
 
 .header__button {
   padding: 14px 20px;
-  background-color: #E3F5F5;
-  color: #03B2A5;
-  border-radius: 4px;
+  background-color: var(--color-brand-light);
+  color: var(--color-brand-primary);
+  border-radius: var(--border-radius-small);
   border: none;
   font-size: 16px;
   font-weight: 700;
@@ -128,8 +163,8 @@ body {
 }
 
 .header__button:hover {
-  background-color: #03B2A5;
-  color: #E3F5F5;
+  background-color: var(--color-brand-primary);
+  color: var(--color-brand-light);
 }
 
 nav ul li:nth-last-child(2)::after {
@@ -139,6 +174,7 @@ nav ul li:nth-last-child(2)::after {
   top: 2px;
 }
 
+/* Footer */
 .footer {
   background-color: #2963A3;
   width: 100%;
@@ -296,8 +332,8 @@ nav ul li:nth-last-child(2)::after {
 
 .main__headline {
   margin-top: 30px;
-  margin-bottom: 32px;
-  font-size: 48px;
+  margin-bottom: var(--spacing-xl);
+  font-size: var(--font-size-3xl);
   font-weight: 700;
   line-height: 56px;
 }
@@ -1044,8 +1080,19 @@ li::marker {
   display: none;
 }
 
-/*media-queries*/
+/* ==========================================================================
+   Утилиты
+   ========================================================================== */
+.background {
+  background-image: url('../img/background/sidebar-background-red.png'), url('../img/background/background-red.png'), url('../img/background/vector-main-page.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center right -470px, bottom 190px right -170px, center bottom -600px;
+  background-size: auto, auto, 100%;
+}
 
+/* ==========================================================================
+   Медиа-запросы
+   ========================================================================== */
 @media screen and (max-width: 1024px) {
   .closing-section {
     display: none;
