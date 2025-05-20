@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+<!-- Head -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YouTalk - платформа психологической поддержки. Блог с полезными материалами о психологии, самопознании и ментальном здоровье.">
+    <meta name="keywords" content="психология, психологическая помощь, психотерапия, ментальное здоровье, блог">
+    <meta name="author" content="YouTalk">
+    <meta name="theme-color" content="#03B2A5">
     <link rel="shortcut icon" href="img/YouTalk.svg" type="image/x-icon">
-    <title>YouTalk</title>
+    <title>YouTalk - Блог о психологии и самопознании</title>
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -32,10 +38,12 @@
                 <div class="header__burger">
                     <span></span>
                 </div>
-                <button href="#" class="header__button">Подобрать психолога</button>
+                <button class="header__button" aria-label="Подобрать психолога">Подобрать психолога</button>
             </div>
         </div>
     </header>
+
+    <!-- Main Content -->
     <main class="main main-background-image">
         <img class="main__background-image" src="./img/background/background.png">
         <div class="container">
@@ -183,11 +191,13 @@
                     </div>
                 </section>
                 <div class="main-btn-wrap">
-                    <button href="#" class="main__button">Ещё</button>
+                    <button class="main__button" aria-label="Показать больше статей">Ещё</button>
                 </div>
             </div>
         </div>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -210,9 +220,9 @@
                     </div>
                     <div class="footer__form" onsubmit="alert('Подписка успешно оформлена')">
                         <div class="footer__form-title">Одно письмо в неделю со свежими <br> новостями и акциями</div>
-                        <form class="footer__form-email">
-                            <input class="footer__form-email-info" type="text" placeholder="Ваш e-mail">
-                            <button class="footer__form-email-button"></button>
+                        <form class="footer__form-email" role="form" aria-label="Форма подписки на рассылку">
+                            <input class="footer__form-email-info" type="email" placeholder="Ваш e-mail" aria-label="Введите ваш email" required>
+                            <button class="footer__form-email-button" aria-label="Подписаться на рассылку"></button>
                         </form>
                         <div class="footer__form-policy">Подписываясь, я соглашаюсь на обработку персональных данных в
                             соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой
@@ -245,6 +255,7 @@
                     </ul>
                 </div>
             </div>
+        </div>
     </footer>
 </body>
 

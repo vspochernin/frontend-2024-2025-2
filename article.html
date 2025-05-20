@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+<!-- Head -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTalk</title>
+    <meta name="description" content="Как не утонуть в тревоге и управлять своими страхами - статья от экспертов YouTalk. Практические советы по работе с тревожностью.">
+    <meta name="keywords" content="тревога, тревожность, страхи, психология, психотерапия, ментальное здоровье">
+    <meta name="author" content="Лиза Файнтух">
+    <meta name="theme-color" content="#03B2A5">
+    <link rel="shortcut icon" href="img/YouTalk.svg" type="image/x-icon">
+    <title>Как не утонуть в тревоге и управлять своими страхами | YouTalk</title>
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -31,12 +38,15 @@
                 <div class="header__burger">
                     <span></span>
                 </div>
-                <button href="#" class="header__button">Подобрать психолога</button>
+                <button class="header__button" aria-label="Подобрать психолога">Подобрать психолога</button>
             </div>
         </div>
     </header>
+
+    <!-- Main Content -->
     <main class="main background">
         <div class="container">
+            <!-- Breadcrumbs -->
             <ul class="breadcrumbs">
                 <li class="breadcrumbs__item"><a href="#">Главная</a></li>
                 <li class="breadcrumbs__item"><img src="./img/arrow-right.svg"></li>
@@ -45,7 +55,10 @@
                 <li class="breadcrumbs__item"><a href="active">Как не утонуть в тревоге и управлять своими страхами</a>
                 </li>
             </ul>
+
+            <!-- Article Content -->
             <div class="content">
+                <!-- Main Article -->
                 <div class="article">
                     <h1 class="article__headline">Как не утонуть в тревоге и управлять своими страхами</h1>
                     <ul class="article__author-date">
@@ -207,6 +220,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Sidebar -->
                 <aside class="sidebar">
                     <div class="sidebar__section-1">
                         <div class="sidebar__qlick">
@@ -215,7 +230,7 @@
                             <span class="sidebar__qlick-heading">Загружаем свободные окошки</span>
                             <p class="sidebar__qlick-text">Все в порядке, сейчас мы перенаправим вас в сервис записи
                                 Qlick, через который удобно выбрать дату, время встречи и оплатить её</p>
-                            <button class="sidebar__button" href="#">Подробнее</button>
+                            <button class="sidebar__button" aria-label="Узнать подробнее о записи">Подробнее</button>
                         </div>
                         <div class="sidebar__contact">
                             <img class="sidebar__contact-image" src="./img/article/sidebar/Lilia.png"
@@ -237,7 +252,7 @@
                                 <li class="sidebar__specialty-item">Подавленность</li>
                                 <li class="sidebar__specialty-item">Тревога и панические атаки</li>
                             </ul>
-                            <button class="sidebar__button">Подробнее</button>
+                            <button class="sidebar__button" aria-label="Узнать подробнее о психологе">Подробнее</button>
                         </div>
                     </div>
                     <div class="sidebar__section-2">
@@ -261,7 +276,7 @@
                             <p class="sidebar__offer-text">Проработать небольшие проблемы и продвинуться в решении
                                 сложных запросов</p>
                             <h3 class="sidebar__offer-price">18 500 ₽</h3>
-                            <button class="sidebar__button short">Купить</button>
+                            <button class="sidebar__button short" aria-label="Купить 8 видео сессий">Купить</button>
                             <img class="sidebar__offer-gift-red" src="./img/article/sidebar/red-present.png"
                                 alt="изображение подарка">
                             <img class="sidebar__offer-gift-blue" src="./img/article/sidebar/blue-present.png"
@@ -270,15 +285,20 @@
                     </div>
                 </aside>
             </div>
+
+            <!-- Call to Action Section -->
             <div class="closing-section">
                 <div class="closing-section-separate">
                     <h1 class="closing-section__question">Откликается проблема?</h1>
                     <p class="closing-section-text">Поможем подобрать специалиста по работе с подобным запросом</p>
-                    <button class="closing-section__button">Подобрать психолога</button>
+                    <button class="closing-section__button" aria-label="Подобрать психолога">Подобрать психолога</button>
                 </div>
                 <img class="closing-section-heroes" src="./img/article/closing-section/heroes.png" alt="изображение">
             </div>
+        </div>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -301,9 +321,9 @@
                     </div>
                     <div class="footer__form" onsubmit="alert('Подписка успешно оформлена')">
                         <div class="footer__form-title">Одно письмо в неделю со свежими <br> новостями и акциями</div>
-                        <form class="footer__form-email">
-                            <input class="footer__form-email-info" type="text" placeholder="Ваш e-mail">
-                            <button class="footer__form-email-button"></button>
+                        <form class="footer__form-email" role="form" aria-label="Форма подписки на рассылку">
+                            <input class="footer__form-email-info" type="email" placeholder="Ваш e-mail" aria-label="Введите ваш email" required>
+                            <button class="footer__form-email-button" aria-label="Подписаться на рассылку"></button>
                         </form>
                         <div class="footer__form-policy">Подписываясь, я соглашаюсь на обработку персональных данных в
                             соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой
@@ -336,6 +356,7 @@
                     </ul>
                 </div>
             </div>
+        </div>
     </footer>
 </body>
 
